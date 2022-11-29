@@ -1,0 +1,21 @@
+{
+  "root": true,
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "project": ["./tsconfig.json"]
+  },
+  "plugins": ["@typescript-eslint"],
+  "extends": ["plugin:prettier/recommended"],
+  "rules": {
+    "max-len": ["error", 120],
+    "quotes": [
+      "error",
+      "single",
+      {
+        "avoidEscape": true,
+        "allowTemplateLiterals": false
+      }
+    ]
+    // ,"@typescript-eslint/no-explicit-any": ["error"]
+  }
+}
